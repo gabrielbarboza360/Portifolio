@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@media (max-width:745px){
+
+/* -------------------------------- header ---------------------------------------*/
+.logo1{
+    display: none; 
+ }
+ .logo2{
+     width: 260px;
+     margin-left: -10px;
+     margin-top: 15px;
+ }
+
+/* ------------------------------------- sessao 1 ---------------------------- */
+
+.sessao1{ height: 640px;
+}
+
+#sessao1responsividadeimg{
+    width: 100%;
+    height: 100%;
+}
+#sessao1img{
+    margin-top: 130px; 
+    width: 100%; 
+    height: 50vh;
+} 
+
+.botaoresponsividade {
+    top: 120px;
+}
+
+@media (max-width:360px){
+    .sessao1 > .botaoresponsividade > button{
+        font-size: 1.4rem; 
+    }
+    
+}
+
+@media (min-width:360px){
+.sessao1 > .botaoresponsividade > button{
+    font-size: 1.8rem; 
+}
+
+
+.contdescriçao > div {
+    margin-top: 120px;
+    width: 400px;
+}
+
+
+}
+.descriçao{
+    width: 100%;
+    height: 69%;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 100px;
+    transition: 350ms;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.descriçao > div > p {
+    font-size: 1rem;
+    text-indent: 18px;
+    text-align: justify;
+}
+
+.descriçao > span {
+    float: right;
+    font-size: 50px;
+    color: white;
+    display: block;
+    margin-top: -60px;
+    margin-right: -40px;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+
+/*--------------- sessao 2 --------------------- */
+
+.sessao2{
+     height: 1700px;   
+    }
+
+.contconhecimento{
+    grid-template-columns: repeat(auto-fit, minmax(290px, .9fr));
+}
+
+
+/* -------------------------- Terceira Sessa -----------------------*/
+.sessao3{
+    height: 1750px;
+}
+
+.projeto{
+   height: 290px;
+}  
+
+#projetotxtresponsividade{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 12pt; 
+}
+
+.contprojeto{
+   row-gap: 60px;
+}
+
+.projeto > .imgtamanho > img{
+    height: 290px;
+}
+
+.texto{
+    margin-top: -290px;
+    margin-left: -10px;
+}
+}
