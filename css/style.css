@@ -75,7 +75,10 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     background-color: #16161a; 
+    border: #5d2a2a solid 1px;
+    box-shadow: 2px 2px 4px #d7090963;
     color:#f5070f;  
     font-size: 24pt; 
     font-family:personalizada, Arial, Helvetica, sans-serif; 
