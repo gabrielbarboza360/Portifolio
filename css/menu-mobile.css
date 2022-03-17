@@ -23,7 +23,7 @@
       #stylebotao{
           border-top: 2px solid;
           width: 30px;
-          color: #04f804;
+          color: #f20954;
       }  
     
       #stylebotao::after , #stylebotao::before{
@@ -85,7 +85,7 @@
     
     .active > .menu > div{
         display: block;
-        margin-left: 115px;
+        margin-left: 80px;
         margin-top: 140px;
     }
     
