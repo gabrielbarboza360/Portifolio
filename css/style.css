@@ -75,10 +75,7 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
     background-color: #16161a; 
-    border: #5d2a2a solid 1px;
-    box-shadow: 2px 2px 4px #d7090963;
     color:#f5070f;  
     font-size: 24pt; 
     font-family:personalizada, Arial, Helvetica, sans-serif; 
@@ -173,7 +170,7 @@ background-color: #0a0a0a;
 }
 
 .contconhecimentohead{
-    background-color:  #000002;
+    background-color: #000002;
     height: 400px;
     border: 1px solid;
     box-shadow: 10px 9px 13px #340f0f;
@@ -193,7 +190,7 @@ background-color: #0a0a0a;
 
 .contconhecimentotxt{
     color: white;
-    width: 240px;
+    width: 100%;
     margin: auto;
 }
 
@@ -206,7 +203,7 @@ background-color: #0a0a0a;
 .sessao3{
     width: 100%;
     height: 700px;
-    background-color:  #000000;
+    background-color: #000000;
 }
 
 .sessao3 > h1{
@@ -245,19 +242,22 @@ background-color: #0a0a0a;
     transform: scale(1.1);
 }
 
+.imgtamanho{
+    width: 100%;
+}
+
 .projeto > .imgtamanho > img{
-    width: 250px;
+    width: 100%;
     height: 210px;
     object-position: left;
     object-fit: cover;
 }
 
-.imgtamanho > img{
-    width: 34px;
-}
 
 .texto{
+    display: block;
     width: 100%;
+  
 }
 
 .texto > h1 {
@@ -265,22 +265,23 @@ background-color: #0a0a0a;
     text-shadow: 2px 2px 2px black;
     margin-top: 10px;
     text-align: center;
-    font-size: 20pt;
+    font-size: 1.5rem;
 }
 
 .texto > h2 {
     color: #b18989;
     margin-top: 10px;
     margin-left: 20px;
-    font-size: 14pt;
+    font-size: 1rem;
 }
 
 .texto > h3{
     color: #b18989;
     margin-top: 10px;
     margin-left: 20px;
-    font-size: 12pt;
+    font-size: 1rem;
 }
+
 
 /* ---------------------------- quartao sessa ----------------------------------------------- */
 .sessao4{
@@ -320,7 +321,6 @@ body{
     background-color: #16161a;
    
 }
-
 
 
 

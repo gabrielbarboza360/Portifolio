@@ -1,117 +1,139 @@
 @charset "UTF-8";
 
-@media (max-width:745px){
+@media (min-width:220px) and (max-width:476px){
 
-/* -------------------------------- header ---------------------------------------*/
-.logo1{
-    display: none; 
- }
- .logo2{
-     width: 260px;
-     margin-left: -10px;
-     margin-top: 15px;
- }
-
-/* ------------------------------------- sessao 1 ---------------------------- */
-
-.sessao1{ height: 870px;
-}
-
-#sessao1responsividadeimg{
-    width: 100%;
-    height: 100%;
-}
-#sessao1img{
-    margin-top: 130px; 
-    width: 100%; 
-    height: 50vh;
-} 
-
-.botaoresponsividade {
-    top: 120px;
-}
-
-@media (max-width:360px){
-    .sessao1 > .botaoresponsividade > button{
-        font-size: 1.4rem; 
+    /* -------------------------------- header ---------------------------------------*/
+    .logo1{
+        display: none; 
+     }
+     .logo2{
+         width: 260px;
+         margin-left: -10px;
+         margin-top: 15px;
+     }
+    
+    /* ------------------------------------- sessao 1 ---------------------------- */
+    
+    .sessao1{ height: 640px;
     }
     
-}
-
-@media (min-width:360px){
-.sessao1 > .botaoresponsividade > button{
-    font-size: 1.8rem; 
-}
-
-
-.contdescriçao > div {
-    margin-top: 120px;
-    width: 400px;
-}
-
-
-}
-.descriçao{
-    width: 100%;
-    height: 69%;
-    background-color: rgb(0, 0, 0);
-    margin: auto;
-    margin-top: 100px;
-    transition: 350ms;
-    border-radius: 20px;
-    padding: 60px;
-}
-
-.descriçao > div > p {
-    font-size: 1rem;
-    text-indent: 18px;
-    text-align: justify;
-}
-
-.descriçao > span {
-    float: right;
-    font-size: 50px;
-    color: white;
-    display: block;
-    margin-top: -60px;
-    margin-right: -40px;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-
-/*--------------- sessao 2 --------------------- */
-
-.sessao2{
-     height: 2100px;   
+    #sessao1responsividadeimg{
+        width: 100%;
+        height: 100%;
     }
-
-.contconhecimento{
-    grid-template-columns: repeat(auto-fit, minmax(290px, .9fr));
-}
-
-
-/* -------------------------- Terceira Sessa -----------------------*/
-.sessao3{
-    height: 1900px;
-}
-
-.projeto{
-   height: 350px;
-}  
-
-#projetotxtresponsividade{
-    margin-top: 40px;
-    margin-left: 40px;
-    font-size: 12pt; 
-}
-
-.contprojeto{
-   row-gap: 60px;
-}
-
-.projeto > .imgtamanho > img{
-    height: 190px;
-}
-
-}
+    #sessao1img{
+        margin-top: 130px; 
+        width: 100%; 
+        height: 50vh;
+    } 
+    
+    .botaoresponsividade {
+        top: 120px;
+    }
+    
+    @media (max-width:360px){
+        .sessao1 > .botaoresponsividade > button{
+            font-size: 1.4rem; 
+        }
+        
+    }
+    
+    @media (min-width:360px){
+    .sessao1 > .botaoresponsividade > button{
+        font-size: 1.8rem; 
+    }
+    
+    
+    .contdescriçao > div {
+        margin-top: 120px;
+        width: 400px;
+    }
+    
+    
+    }
+    .descriçao{
+        width: 100%;
+        height: 69%;
+        background-color: rgb(0, 0, 0);
+        margin: auto;
+        margin-top: 100px;
+        transition: 350ms;
+        border-radius: 20px;
+        padding: 60px;
+    }
+    
+    .descriçao > div > p {
+        font-size: 1rem;
+        text-indent: 18px;
+        text-align: justify;
+    }
+    
+    .descriçao > span {
+        float: right;
+        font-size: 50px;
+        color: white;
+        display: block;
+        margin-top: -60px;
+        margin-right: -40px;
+        transition: 350ms;
+        cursor: pointer;
+    }
+    
+    
+    /*--------------- sessao 2 --------------------- */
+    .sessao2{height: 2100px;}
+    
+    
+    .contconhecimento{
+        grid-template-columns: repeat(auto-fit, minmax(290px, .9fr));
+    }
+    
+    @media (min-width: 480px) and (max-width: 658px){
+        .contconhecimentoimg{
+            width: 300px;
+        }
+    }
+    
+    
+    /* -------------------------- Terceira Sessa -----------------------*/
+    
+    
+    .sessao3{height: 1900px;}
+    
+    .projeto{
+       height: 350px;
+    }  
+    
+    #projetotxtresponsividade{
+        margin-top: 40px;
+        margin-left: 40px;
+        font-size: 12pt; 
+    }
+    
+    .contprojeto{
+       row-gap: 60px;
+    }
+    
+    .projeto > .imgtamanho > img{
+        height: 190px;
+    }
+    
+    
+    }
+    
+    /* dimenssao do Projeto na Sessao 3 */
+    
+        
+    @media (min-width: 477px) and (max-width:956px){
+        .sessao3{height: 1100px;}
+        .sessao2{height: 1100px;}
+        }
+    
+    /*------------------- Tamanho do Projeto da sessao 3----------------------*/
+    
+    
+    @media (min-width: 477px) and (max-width:536px){
+        .projeto{width: 210px;}}
+    
+    @media (min-width: 717px) and (max-width:975px){
+            .projeto{width: 220px;}}
