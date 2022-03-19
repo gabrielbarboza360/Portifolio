@@ -114,7 +114,7 @@
        row-gap: 60px;
     }
     
-    .projeto > .imgtamanho > img{
+    .projeto > a >.imgtamanho > img{
         height: 190px;
     }
     

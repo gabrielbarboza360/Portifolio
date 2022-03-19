@@ -246,11 +246,16 @@ background-color: #0a0a0a;
     width: 100%;
 }
 
-.projeto > .imgtamanho > img{
+.projeto > a > .imgtamanho > img{
     width: 100%;
     height: 210px;
     object-position: left;
     object-fit: cover;
+}
+
+.projeto > a{
+    text-decoration: none;
+
 }
 
 
