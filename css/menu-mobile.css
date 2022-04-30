@@ -1,32 +1,25 @@
 @charset "UTF-8";
 
-@media (max-width:745px){
+@media (max-width:960px){
   
     .contheaderimg{
         width: 40px;
         display: block;
     }
     
-    
-    #btn-mobile{
-        display: flex;
-        margin-top: 30px;
-        margin-left: -10px;
-        color: white;  
-        border: none;
-        background: none;
-        cursor: pointer;
+    .header_container_menu{
+        margin-right: 20px ;
     }
-    
-    
-    
-      #stylebotao{
+       
+    #btn_mobile{
           border-top: 2px solid;
           width: 30px;
+          margin-top: 30px;
           color: #f20954;
-      }  
+          cursor: pointer;
+        }  
     
-      #stylebotao::after , #stylebotao::before{
+    #btn_mobile::after , #btn_mobile::before{
           content: '';
           display: block;
           width: 30px;
@@ -35,73 +28,91 @@
           margin-top:5px;
           transition: .3s;
           position: relative;
-      }
+       }
     
-    
-    .active > #btn-mobile > #stylebotao{
-        border-top-color: transparent;
-        margin-left: -20px;
-        
+    #interface_menu{
+        background-color: #191B1E;
+        margin-top: -50px;
+        margin-left: -200px;
+        position: fixed;
+        z-index: 99;
+        left: -330px;
+        overflow: hidden;
+        width: 350px;
+        height: 1200px;
+        transition: 2s;
+            
+   
     }
     
-    
-     .active > #btn-mobile> #stylebotao::before {
-           transform: rotate(135deg);
-           width: 40px;
-           height: 3px;
-           color: red;
-     }
-     .active >#btn-mobile> #stylebotao::after {
-        transform: rotate(-135deg);
-        width: 40px;
-        height: 3px;
-        color: red;
-        top: -7px;   
+    #botao_fechar{
+        position: relative;
+        top: 70px;
+        font-size: 18pt;
+        left: 300px;
+        cursor: pointer;
     }
     
-    
-    .menu{
-        margin: 0px;
-        top: 0px;
-        right: -500px;
-        height: 0vh;
-        visibility: hidden;
+    #nav{
+        display: none;  
+    }
+    .logo1{
+        display: none;
+    }
+    .logo2{
+        margin-top: 10px;
     }
     
 
-    .active > .menu {
-        display: block;
-        background-color: rgb(34, 34, 34);
-        width: 300px;
-        height: 100vh;
-        right: 0px;
-        visibility: visible;
-        margin-left: -200px;
-        margin-top: -70px;
-        overflow-y: auto;
-        transition: 0.6s;
-    
+
+.interface_menu_titulo{
+    display: block;
+    position: relative;
+    top: 70px;
+    left: 80px;
+     height: 120px;
+     border-bottom: 1px solid #ffffff1a;
+}
+
+.interface_menu_titulo_menu{
+    position: relative;
+    top: 100px;
+    left: 70px;
+    height: 230px;
+    border-bottom: 1px solid #ffffff1a;
+
+}
+
+.interface_menu_titulo_menu > li {
+    font-size: 14pt;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 10px;
+    color: #C4CFDE;
+    cursor: pointer;
+}
+
+.interface_menu_titulo_menu > li:hover {
+    color: rgb(9, 245, 9);
+}
+
+.interface_menu_titulo_redes{
+    display: inline-flex;
+    position: relative;   
+    top: 150px;
+    left: 70px;
+}
+
+.interface_menu_titulo_redes > li {    list-style: none;}
+
+.interface_menu_titulo_redes > li > a > img{
+    width: 70px;
+    cursor: pointer;
+}
+}
+
+@media(min-width: 961px){
+    #interface_menu{
+        display: none;
     }
-    
-    .active > .menu > div{
-        display: block;
-        margin-left: 80px;
-        margin-top: 140px;
-    }
-    
-    
-    
-    .active > .menu > div > li > a> img {
-        width: 90px;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}    
+}

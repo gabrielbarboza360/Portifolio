@@ -13,44 +13,54 @@
 
 /* ---------------------------------- HEADER ------------------------------------- */
 
-.contheader{
-   width: 100%;
-   height: 70px;
-   z-index: 2000;
-   position: fixed;
-   margin: 0 auto;
-   background-color: #121214;
+.header_container{
+    width: 100%;
+    height: 70px;
+    display: inline-flex;
+    z-index: 99;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #121214;
    border-bottom: 2px solid #340f0f;
 }
 
+.header_container_logo{
+    margin-left: 10px;
+}
+
+
 .logo1{
-    width: 70px;
+    width: 60px;
     margin-top: 10px;
     margin-left: 30px;   
 }
 .logo2{
-    width: 300px;
+    width: 260px;
     margin: 0px;
 }
 
-.contheader > nav{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.contheaderimg > .menu > div{
+.header_menu{
+    color: white;
     display: inline-flex;
     list-style: none;
     margin-top: 10px;
-    margin-right: 40px;
+    
 }
 
-.contheaderimg > .menu >div >  li > a > img{
-    width: 70px;
+.header_menu > li {
+    padding: 15px;
+   
 }
 
-#btn-mobile{
-    display: none;
+.header_menu > li > a {
+    font-size: 16pt;
+    cursor: pointer;
+    
+}
+
+.header_menu > li > a:hover {
+    color: rgb(2, 255, 2);
+    
 }
 
 /*------------------------------ Primeira SESSAO Descriçao -------------------------------- */
@@ -61,144 +71,167 @@
      height: 900px;
     }
 
+    @media(max-width:960px){
+        .sessao1{height: 740px;}
+    }
+
 #sessao1img{
     display: block; 
     margin: auto; 
-    margin-top: 100px; 
-    width: 70%; 
+    margin-top: -30px;
+    width: 70%;
     object-fit: cover;
 } 
 
+
+
+
 .sessao1 > .botaoresponsividade > button{
-    cursor: pointer; 
-    display: block;
+    cursor: pointer;
     margin-top: 20px;
     margin-left: auto;
+    border: none;
     margin-right: auto;
-    background-color: #16161a; 
-    color:#f5070f;  
-    font-size: 24pt; 
-    font-family:personalizada, Arial, Helvetica, sans-serif; 
+    background-color: #16161a;
+    color: #FF014F;
+    font-size: 24pt;
+    font-family: personalizada, Arial, Helvetica, sans-serif;
 }
 
 .botaoresponsividade{
     display: flex;
     position: relative;
-    top: 90px;
+    top: 220px;
 }
 
 .sessao1 > .botaoresponsividade > button:hover{
     color: #04f804;
 }
 
-.contsessao1{
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.411);
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    display: none;
-    transition: 350ms;
-}
 
-.descriçao{
-    width: 60%;
-    height: 70%;
-    background-color: rgb(0, 0, 0);
-    margin: auto;
-    margin-top: 100px;
-    transition: 350ms;
-    border-radius: 20px;
-    padding: 60px;
-}
 
-.descriçao > div  {
-    display: flex;
-}
-
-.descriçao > div > p {
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 16pt;
-    margin-top: 20px;
-    margin: auto;
-    transition: 350ms;
-}
-
-.descriçao > span {
-    float: right;
-    font-size: 50px;
+#h1_quemsoueu{
     color: white;
-    display: block;
-    margin-top: -60px;
-    margin-right: -40px;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-.descriçao > span:hover {
-   color:#04f804    
-}
-
-/* ---------------------------------- Segunda Sessao ------------------------------- */
-
-.sessao2{
-background-color: #0a0a0a;
- width: 100%;
- height: 680px;
-}
-
-.sessao2 > h1{
-    display: flex;
-    font-family: personalizada, Arial, Helvetica, sans-serif;
-    text-decoration: underline;
-    padding: 30px;
-    font-size: 2rem;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.contconhecimento{
-    display: grid;
-    gap: 60px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.contconhecimentohead{
-    background-color: #000002;
-    height: 400px;
-    border: 1px solid;
-    box-shadow: 10px 9px 13px #340f0f;
-}
-
-
-
-.contconhecimentoimg{
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-.contconhecimentoimg > img{
-    width: 100%;
-}
-
-.contconhecimentotxt{
-    color: white;
-    width: 100%;
-    margin: auto;
-}
-
-.contconhecimentotxt > p{
-    color: white;
-    font-size: 12pt;
+   
+    font-family: personalizada;
+    font-size: 3.8rem;
     text-align: center;
+    text-shadow: 2px 2px 4px black;
+    position: relative;
+    top: 230px;
+   
+    box-sizing: border-box;
+  
 }
+
+@media(max-width:960px){   
+    #sessao1img{
+        width: 100%;
+        height: 50%;
+      
+    }
+
+     .botaoresponsividade {
+        display: flex;
+        position: relative;
+        top: 150px;
+     }
+
+     #h1_quemsoueu {
+       
+        font-size: 3rem;
+        top: 140px;
+      
+
+
+}
+
+}
+
+/* ------------------------------- Sobre  mim -------------------------------*/
+
+.sessaosobre{
+    width: 100%;
+    height: 640px;
+    background-color: rgb(0, 0, 0);
+}
+
+.who_im{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'personalizada';
+    padding-top: 40px;
+    
+}
+
+.sessaosobre_img{
+    width: 120px;
+    position: relative;
+    left: 230px;
+    top: 60px;
+}
+
+.sessaosobre_txt{
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    text-indent: 20px;
+    text-align: justify;
+    padding-left: 370px;
+    padding-right: 170px;
+}
+
+@media(max-width:960px){
+  .sessaosobre_img{ position: relative;
+    width: 90px;
+    top: 40px;
+    left: 0px;
+} 
+
+.sessaosobre_txt{
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    text-indent: 50px;
+    text-align: justify;
+    padding-top: -50px;
+    padding: 10px;
+    padding-left: auto;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    width: auto;
+    margin: 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------- terceira sessao  -------------------------------------------*/
 .sessao3{
     width: 100%;
@@ -286,6 +319,123 @@ background-color: #0a0a0a;
     margin-left: 20px;
     font-size: 1rem;
 }
+
+/* ------------------------------------------- Habiliade --------------------- */
+.sessao_habilidade{
+    width: 100%;
+   height: 900px;
+   background-color: #0a0a0a;
+}
+
+@media(max-width:960px){
+    .sessao_habilidade{
+        height: 1000px;
+    }
+}
+
+.sessao_habilidade_titulo{
+   color: white;
+   text-shadow: 2px 2px 4px black;
+   text-align: center;
+   font-size: 2.5rem;
+   font-family: 'personalizada';
+   padding-top: 40px;
+}
+
+
+.caixa_texto{
+   display: block;
+   margin: auto;
+   margin-top: 100px;
+   width: 850px;
+   height: 399px;
+   background-color: #2A2D34;
+}
+
+@media(max-width:960px){
+  .caixa_texto{
+   display: block;
+   margin: auto;
+   margin-top: 50px;
+   width: 450px;
+   height: 520px;
+   background-color: #2A2D34;
+  }
+
+}
+
+.head_texto{
+   display: inline-flex;
+   background-color: #646872;
+   width: 100%;
+   height: 60px;
+   font-size: 16pt;
+   color:white;
+   font-weight: bold
+}
+
+#body_texto{
+   color: white;
+   text-align: center;
+   margin-top: 40px;
+}
+
+#body_texto{
+   display: grid;
+   grid-template-columns: repeat(3, 1.5fr);
+   grid-column-gap: 16px;
+   grid-row-gap: 2em;
+   grid-template-columns: 1;
+   padding: 10px;
+}
+
+#body_texto2{
+   grid-template-columns: 1;
+   display: block;
+   margin: 40px;
+   margin: 10px auto 0px auto;
+   width: 300px;
+   text-align: cetert;
+   padding: 10px;
+   color: #FF014F;
+}
+
+.body_texto_div2{
+   box-shadow: 2px 2px 4px black;
+   border-radius: 4px;
+   display: block;
+   background-color: #1E2124;
+   margin: 6px;
+}
+
+.body_texto_div{
+   box-shadow: 2px 2px 4px black;
+   border-radius: 4px;
+   display: block;
+   background-color: #1E2124;
+}
+
+.body_texto_div_h1{
+   font-size: 1.4rem;
+   text-align: center;
+   padding-bottom: 15px;
+   padding-top: 10px;
+   text-shadow: 2px 2px 4px black;
+}
+
+.body_texto_div_h2{
+   font-size: 1.2rem;
+   text-shadow: 2px 2px 4px black;
+   padding-bottom: 10px;
+   color: #7C838E;
+}
+
+.body_texto_div_h3{
+ color: #FF014F;
+}
+
+
+
 
 
 /* ---------------------------- quartao sessa ----------------------------------------------- */

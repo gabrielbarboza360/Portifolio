@@ -16,163 +16,220 @@
 
 <body>
     
-<header>
+    <header>
   
-    <div class="contheader">
-          <nav>
-                <div> 
-                    <img src="imagem/logo1.png" class="logo1">
-                    <img src="imagem/logo.png" class="logo2" >
-                </div>
-                 
-           <ul class="contheaderimg" id="nav">
-               <button id="btn-mobile"> <span id="stylebotao"></span></button> 
-                      <div class="menu">
-                          <div>
-                              <li> <a href="https://www.facebook.com/gabriel.barboza.587268/" target="_blank"><img src="imagem/facebook.png" style="cursor: pointer;" onmousemove="trface1()" onmouseout="trface0()"  id="facebook"></a> </li>
-
-                              <li><a href="https://www.instagram.com/gabrielll3600/" target="_blank"><img src="imagem/inst.png" onmousemove="trinst1()" onmouseout="trinst0()"  id="inst" style="cursor: pointer;"></a></li>
-
-                              <li><a href="https://github.com/gabrielbarboza360?tab=repositories" target="_blank"><img src="imagem/git.png" onmousemove="trgit1()" onmouseout="trgit0()"  id="git" style="cursor: pointer;"></a></li>
-
-                             <li><a href="#"><img src="imagem/in.png"  onmousemove="trin1()" onmouseout="trin0()"  id="in" style="cursor: pointer;"></a></li>
-                          </div>
-                     
-                        </div>  
-                  
-            </ul>
+        <div class="header_container">
             
-          </nav>
-    </div>
-</header>
-
-<section class="sessao1" >
-
-  <div class="contsessao1" id="movimento" >
-       <div class="descriçao">
-            <span class="close" onclick="fechar()"> &times;</span>
-                 <div>
-                     <p>Cursando Analise e Desenvolvimento de Sistema, resolvi buscar a área de TI como minha futura profissão na área de FRONT-END, estou em busca de adquirir conhecimento e pôr em pratica. Inicialmente estou estudando HTML, CSS e JavaScript. Quando sentir confiança nesses três pilares, vou iniciar nos FrameWorks. Abaixo segue alguns Projetos que realizei e certificados obtidos em Curso que venho realizando além da faculdade.</p>
-                 </div>  
+            <div class="header_container_logo">
+                  <img src="imagem/logo1.png" class="logo1">
+                  <img src="imagem/logo.png" class="logo2" >
+            </div>
+                      
+              <nav class="header_container_menu">
+                    <div id="btn_mobile"></div>
+      
+                     <div id="interface_menu">
+                         <span id="botao_fechar">❌</span>
+                       
+                            <div class="interface_menu_titulo">  
+                                 <h1 style=" text-shadow: 2px 2px 4px black; color: #DC0140; font-family: personalizada;">Gabriel Barboza </h1>
+                                 <p style=" font-family: Arial, Helvetica, sans-serif; color: #BCBCBC; margin-top: 20px; width: 277px; font-size: 13.5pt;"> Focado em aprender tecnologias voltado para o Front-End!</p>
+                          </div>
+      
+                                          <ul class="interface_menu_titulo_menu">
+                                              <li id="header_sobre"><a> Sobre </a></li>
+                                              <li id="header_projetos"><a> Projetos</a></li>
+                                              <li id="header_educa"><a > Educação</a></li>
+                                              <li  id="header_certificado"><a> Certificados </a></li>
+                                      </ul>
+      
+                                          <h1 style="position: relative; top: 125px;
+                                          left: 80px; color: #BCBCBC;">Minhas Redes</h1>
+                                          <div class="interface_menu_titulo_redes">
+                                  
+                          <li> <a href="https://www.facebook.com/gabriel.barboza.587268/" target="_blank"><img src="imagem/facebook.png" style="cursor: pointer;"  id="facebook"></a> </li>
+      
+                          <li  ><a href="https://www.instagram.com/gabrielll3600/" target="_blank"><img src="imagem/inst.png" id="inst" style="cursor: pointer;"></a></li>
+      
+                          <li ><a href="https://github.com/gabrielbarboza360?tab=repositories" target="_blank"><img src="imagem/git.png" id="git" style="cursor: pointer;"></a></li>
+      
+                         <li><a href="#"><img src="imagem/in.png"  id="in" style="cursor: pointer;"></a></li>
+         
+                   </div>
+                  </div>     
+      
+      <ul class="header_menu" id="nav" >
+          <li id="header_sobre2"><a> Sobre </a></li>
+          <li id="header_projetos2"><a> Projetos </a></li>
+          <li id="header_educa2"><a >Educação</a></li>
+         <li id="header_certificado2"><a> Certificados </a></li>
+       </ul>
+                  
+      </nav>
       </div>
- </div> 
+    </header>
+
+    <section class="sessao1" >
+
+        <h1 id="h1_quemsoueu">Gabriel Barboza</h1>
+          <div class="botaoresponsividade" >
+            
+               <button  id="botaodescriçao" > &nbsp Quem sou Eu? &nbsp</button>
+          </div>
+      
+         <div id="sessao1responsividadeimg">
+              <img src="../fundoteste.jpg" id="sessao1img">
+             
+          </div>
+      </section>
+
+      <section class="sessaosobre">
+    
+        <h1 class="who_im" > Sobre <span style="text-decoration: underline wavy #EB0245;">mim &nbsp </span></h1>
+    
+        <img src="imagem/mexendo_pc.png" class="sessaosobre_img">
+    
+        <p class="sessaosobre_txt">Meu nome é Gabriel, tenho 22 anos. Resolvi buscar a área de TI como minha futura profissão na área do FRONT-END, estou em busca de adquirir conhecimento e pôr em pratica. Otimizando meus estudos e mantendo o foco, venho obtendo bons resultados na assimilação de conteúdo, em breve estarei em busca de ingressar no mercado da programação. Como um bom desenvolvedor! </p>
+    
+    </section>
+
+    <section class="sessao3" >
+
+        <h1>Projetos</h1>
+
+<div class="contprojeto">
+<div class="projeto"><a href="https://gabrielbarboza360.github.io/Cardapio/index.html" target="_blank">
+
+<div class="imgtamanho"> 
+<img src="imagem/cardapio.png" >
+</div>
 
 
-    <div class="botaoresponsividade">
-         <button onclick="mostrar()" id="botaodescriçao"> &nbsp &lt; &nbsp Gabriel Barboza &nbsp &gt; &nbsp</button>
-    </div>
+<div class="texto">
+<h1 >Cardápio</h1>
+<h2 > - HTML/CSS/JS</h2>
+<h3>- Criaçao de um ecommerce</h3>
+</div>
+</a>
+</div>
 
-   <div id="sessao1responsividadeimg">
-        <img src="imagem/fundo.jpg" id="sessao1img">
-        <h1 style="text-align: center; color: white; font-size: 0.8rem; ">Click No Nome Acima</h1>
-    </div>
+
+<div class="projeto"><a href="https://gabrielbarboza360.github.io/JavaScript/contador/index7.html" target="_blank">
+<div class="imgtamanho"> 
+
+<img src="imagem/botao.jpg" >
+<div class="texto">
+<h1>Contagem Regressiva</h1>
+<h2> - HTML/CSS/JavaScript</h2>
+<h3> - Explorando mais a arvore DOM </h3>
+</div>
+
+</div>
+</a>
+</div>
+
+
+<div class="projeto"><a href="https://gabrielbarboza360.github.io/JavaScript/combustivel/index2.html" target="_blank">
+<div class="imgtamanho"> 
+<img src="imagem/gasolina.jpg" >
+<div class="texto">
+<h1>Calculo de Vantagem </h1>
+<h2> - JavaScript</h2>
+<h3> -  Calculo com Javascript</h3>
+</div>
+
+</div>
+</a>
+</div>
+
+
+<div class="projeto"><a href="https://gabrielbarboza360.github.io/JavaScript/Lampada/index6.html" target="_blank">
+<div class="imgtamanho"> 
+<img src="imagem/lampada.jpg" >
+<div class="texto">
+<h1>Lâmpada</h1>
+<h2> - JavaScript</h2>
+<h3> - Mudança de estagio de uma lampada com JavaScript </h3>
+</div>
+</div>
+</a>
+</div>
+</div>
 </section>
 
+<section class="sessao_habilidade">
 
-<section class="sessao2" >
+    <h1 class="sessao_habilidade_titulo"> Educa<span style="text-decoration: underline wavy #EB0245;;">ção &nbsp</span> </h1>
+                 
+                       <div ><img src="imagem/imgcurriculo.png" style="width: 80px; display: block; margin: auto; margin-top: 40px;"></div>
 
-                                       <h1>Conhecimento</h1>
 
-    <div class="contconhecimento">
-        <div class="contconhecimentohead">
-            <div class="contconhecimentoimg"><img src="imagem/html.png" ></div> 
-
-              <div class="contconhecimentotxt">
-                  <p>HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir. </p> 
-              </div>
-
+    <div class="caixa_texto">
+                
+        <div class="head_texto">
+            <div style="background-color: #2A2D34; font-weight: bold; padding: 15px;" class="sessao2_txt1" id="formaçao">Formação</div>
+            <div class="sessao2_txt2" id="skills" style="padding: 15px;">Skills</div>
+        </div>
+    
+        <div id="body_texto">
+            <div class="body_texto_div" >
+             <h1 class="body_texto_div_h1">Universidade Estácio de Sá</h1>
+             <h2 class="body_texto_div_h2">Analise e desenvolvimento de sistema (cursando)</h2>
             </div>
 
+            <div class="body_texto_div" >
+                <h1 class="body_texto_div_h1">Curso em video</h1>
+                <h2 class="body_texto_div_h2"> Html-css (40hrs)</h2>
+                <h3 class="body_texto_div_h3">Curso Extra</h3>
+               </div>
 
-        <div class="contconhecimentohead">
-             <div class="contconhecimentoimg"><img src="imagem/css.png" ></div> 
-                 <div class="contconhecimentotxt">
-                     <p>CSS é uma linguagem de folha de estilo composta por "camadas", criando com o propósito de estilizar as paginas HTML</p>
-                 </div>    
+               <div class="body_texto_div" >
+                <h1 class="body_texto_div_h1">Estudonauta</h1>
+                <h2 class="body_texto_div_h2">Html-css Módulo 1 (40hrs)</h2>
+                <h3 class="body_texto_div_h3">Curso Extra</h3>
+               </div>
 
-        </div>  
-        
-        <div class="contconhecimentohead">
-             <div class="contconhecimentoimg"><img src="imagem/Js.png" ></div> 
-                  <div class="contconhecimentotxt">
-                      <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
-                  </div>    
+               <div class="body_texto_div">
+                <h1 class="body_texto_div_h1">Estudonauta</h1>
+                <h2 class="body_texto_div_h2">Html-css Módulo 2 (40hrs)</h2>
+                <h3 class="body_texto_div_h3">Curso Extra</h3>
+               </div>
 
-        </div>  
+               <div class="body_texto_div">
+                <h1 class="body_texto_div_h1">Bradesco</h1>
+                <h2 class="body_texto_div_h2">Javascript (20 horas)</h2>
+                <h3 class="body_texto_div_h3">Curso Extra</h3>
+               </div>
 
-        <div class="contconhecimentohead">
-             <div class="contconhecimentoimg"><img src="imagem/ps.png" ></div> 
-                  <div class="contconhecimentotxt">
-                      <p>Pratica básica em estilização de imagem .</p>
-                  </div>    
-
-        </div>  
-   </div>   
-</section>
-
-
-<section class="sessao3" >
-
-                                            <h1>Projetos</h1>
-
- <div class="contprojeto">
-    <div class="projeto"><a href="https://gabrielbarboza360.github.io/Cardapio/index.html" target="_blank">
-
-                    <div class="imgtamanho"> 
-                         <img src="imagem/cardapio.png" >
-                    </div>
-
-
-         <div class="texto">
-               <h1 >Cardápio</h1>
-                   <h2 > - HTML/CSS/JS</h2>
-                   <h3>- Criaçao de um ecommerce</h3>
-         </div>
-        </a>
-    </div>
-
-
-    <div class="projeto"><a href="https://gabrielbarboza360.github.io/JavaScript/contador/index7.html" target="_blank">
-        <div class="imgtamanho"> 
-            
-            <img src="imagem/botao.jpg" >
-                 <div class="texto">
-                      <h1>Contagem Regressiva</h1>
-                        <h2> - HTML/CSS/JavaScript</h2>
-                        <h3> - Explorando mais a arvore DOM </h3>
-                 </div>
-        
+               <div class="body_texto_div">
+                <h1 class="body_texto_div_h1">Estudonauta</h1>
+                <h2 class="body_texto_div_h2">Javascript</h2>
+                <h3 class="body_texto_div_h3">Curso Extra</h3>
+               </div>
+       
         </div>
-    </a>
-    </div>
 
-
-    <div class="projeto"><a href="https://gabrielbarboza360.github.io/JavaScript/combustivel/index2.html" target="_blank">
-         <div class="imgtamanho"> 
-              <img src="imagem/gasolina.jpg" >
-                  <div class="texto">
-                       <h1>Calculo de Vantagem </h1>
-                          <h2> - JavaScript</h2>
-                          <h3> -  Calculo com Javascript</h3>
-                  </div>
+        <div id="body_texto2" style="display: none;">
+            <div class="body_texto_div2">
+                <h1 class="body_texto_div_h1">HTML</h1>
+               </div>
+               <div class="body_texto_div2">
+                <h1 class="body_texto_div_h1">CSS</h1>
+               </div>
+               <div class="body_texto_div2">
+                <h1 class="body_texto_div_h1">Javascript</h1>
+               </div>
+               <div class="body_texto_div2">
+                <h1 class="body_texto_div_h1">jquery</h1>
+               </div>
+               <div class="body_texto_div2">
+                <h1 class="body_texto_div_h1">Ajax</h1>
+               </div>
+        </div>
         
-        </div>
-        </a>
     </div>
 
 
-    <div class="projeto"><a href="https://gabrielbarboza360.github.io/JavaScript/Lampada/index6.html" target="_blank">
-          <div class="imgtamanho"> 
-               <img src="imagem/lampada.jpg" >
-                    <div class="texto">
-                         <h1>Lâmpada</h1>
-                           <h2> - JavaScript</h2>
-                           <h3> - Mudança de estagio de uma lampada com JavaScript </h3>
-                    </div>
-        </div>
-    </a>
-    </div>
-</div>
 </section>
 
 
@@ -233,8 +290,8 @@
     </div> 
  </section>
 
-<footer >
-    <p> © Copyright 2022: Gabriel Barboza - Todos os direitos reservados.</a></p>
+ <footer >
+    <p>  <span id="year"></span> © Copyright - Todos os direitos reservados.</a></p>
 </footer>
  
 
