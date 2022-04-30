@@ -211,25 +211,6 @@
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------------------- Segunda Sessao ------------------------------- */
 
 .sessao2{
@@ -456,7 +437,7 @@ body{
    margin-top: 100px;
    width: 850px;
    height: 399px;
-   background-color: #2A2D34;
+   background-color:#16181e;
 }
 
 @media(max-width:960px){
@@ -466,7 +447,7 @@ body{
    margin-top: 50px;
    width: 400px;
    height: 520px;
-   background-color: #2A2D34;
+   background-color: #16181e;
   }
 
 }
