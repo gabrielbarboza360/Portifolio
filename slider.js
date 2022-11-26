@@ -52,3 +52,21 @@ function fechar5(){
    document.getElementById('zoom5').style.display = "none";
 
 }
+
+function click6(){document.getElementById('zoom6').style.display = "block";}
+function fechar6(){
+   document.getElementById('zoom6').style.display = "none";
+
+}
+
+function click7(){document.getElementById('zoom7').style.display = "block";}
+function fechar7(){
+   document.getElementById('zoom7').style.display = "none";
+
+}
+
+function click8(){document.getElementById('zoom8').style.display = "block";}
+function fechar8(){
+   document.getElementById('zoom8').style.display = "none";
+
+}

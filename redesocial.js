@@ -136,8 +136,8 @@ texto2.onclick = function(){
 
 
 texto1.onclick = function(){
-    sessao2.style.display = "none";
-    sessao1.style.display = "grid";
+    sessao2.style.display= "none";
+    sessao1.style.display = "block";
     texto2.style['background-color'] = naoseletorcor;
     texto1.style['background-color'] = seletorcor;
 
