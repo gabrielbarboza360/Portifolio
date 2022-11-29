@@ -86,7 +86,7 @@
 
 
 
-.sessao1 > .botaoresponsividade > button{
+.sessao1 > .botaoresponsividade > button  {
     cursor: pointer;
     margin-top: 20px;
     margin-left: auto;
@@ -98,13 +98,18 @@
     font-family: personalizada, Arial, Helvetica, sans-serif;
 }
 
-.botaoresponsividade{
+.sessao1 > .botaoresponsividade > button > a {
+    text-decoration: none;
+    color: #FF014F;
+}
+
+.botaoresponsividade  {
     display: flex;
     position: relative;
     top: 220px;
 }
 
-.sessao1 > .botaoresponsividade > button:hover{
+.sessao1 > .botaoresponsividade > button > a:hover{
     color: #04f804;
 }
 
