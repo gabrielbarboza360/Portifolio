@@ -112,7 +112,7 @@ btnFormaçao.addEventListener("click", (e) =>{
     conteudoSkills.style.display = "none";
     btnSkills.style['background-color'] = naoseletorcor;
     btnFormaçao.style['background-color'] = seletorcor;
-    caixaTexto.style.height = "950px";
+    caixaTexto.style.height = "1450px";
 
 
 });

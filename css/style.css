@@ -157,7 +157,7 @@
 
 #sessaoSobre{
     width: 100%;
-    height: 640px;
+    height: 940px;
     background-color: rgb(0, 0, 0);
 }
 
@@ -449,7 +449,7 @@ body{
 
 @media(max-width:960px){
     #sessao_habilidade{
-        height: 1400px;
+        height: 1700px;
     }
 }
 
@@ -595,7 +595,7 @@ margin-right: auto;
 #sessaoFormulario{
     background-color: #0a0a0a;
     width: 100%;
-    height: 1800px;
+    height: 2100px;
 }
 
 .contFormulario{
@@ -698,7 +698,7 @@ form > button{
   
   .contFormulario{
       width: 90%;
-      height: 820px;
+      height: 920px;
     }
 
     #button{
