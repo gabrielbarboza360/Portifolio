@@ -52,27 +52,27 @@
    
 }
 
-.header_menu > li > a {
+.header_menu > li  {
     font-size: 16pt;
     cursor: pointer;
     
 }
 
-.header_menu > li > a:hover {
+.header_menu > li:hover {
     color: rgb(2, 255, 2);
     
 }
 /*------------------------------ Primeira SESSAO Descriçao -------------------------------- */
 
 
-.sessao1{
+#sessao1{
     background-color:  #000002;
      width: 100%;
      height: 900px;
     }
 
     @media(max-width:960px){
-        .sessao1{height: 740px;}
+        #sessao1{height: 740px;}
     }
 
 #sessao1img{
@@ -86,7 +86,7 @@
 
 
 
-.sessao1 > .botaoresponsividade > button  {
+#sessao1 > .botaoresponsividade > button  {
     cursor: pointer;
     margin-top: 20px;
     margin-left: auto;
@@ -98,7 +98,7 @@
     font-family: personalizada, Arial, Helvetica, sans-serif;
 }
 
-.sessao1 > .botaoresponsividade > button > a {
+#sessao1 > .botaoresponsividade > button > a {
     text-decoration: none;
     color: #FF014F;
 }
@@ -109,7 +109,7 @@
     top: 220px;
 }
 
-.sessao1 > .botaoresponsividade > button > a:hover{
+#sessao1 > .botaoresponsividade > button > a:hover{
     color: #04f804;
 }
 
@@ -155,7 +155,7 @@
 
 /* ------------------------------- Sobre  mim -------------------------------*/
 
-.sessaosobre{
+#sessaoSobre{
     width: 100%;
     height: 640px;
     background-color: rgb(0, 0, 0);
@@ -163,7 +163,7 @@
 
 
 @media (max-width: 416px){
-    .sessaosobre {
+    #sessaoSobre {
         height: 840px;
     }
 }
@@ -205,6 +205,7 @@
     left: 0px;
 } 
 
+/* mexer aqui */
 .sessaosobre_txt{
     display: inline-flex;
     font-size: 1.5rem;
@@ -228,13 +229,13 @@
 
 /* ---------------------------------- Segunda Sessao ------------------------------- */
 
-.sessao2{
+#sessao2{
 background-color: #0a0a0a;
  width: 100%;
  height: 680px;
 }
 
-.sessao2 > h1{
+#sessao2 > h1{
     display: flex;
     font-family: personalizada, Arial, Helvetica, sans-serif;
     text-decoration: underline;
@@ -285,20 +286,35 @@ background-color: #0a0a0a;
     text-align: center;
 }
 /*----------------------------- terceira sessao  -------------------------------------------*/
-.sessao3{
+#sessaoProjetos{
     width: 100%;
     height: 700px;
     background-color:#0a0a0a;
 }
-@media (max-width: 960px){
-    .sessao3{
+@media (max-width: 556px){
+    #sessaoProjetos{
         width: 100%;
-        height: 1800px;
+        height: 2800px;
+    }
+}
+
+@media (min-width: 557px) and (max-width:837px){
+    #sessaoProjetos{
+        width: 100%;
+        height: 1600px;
     }
 }
 
 
-.sessao3 > h1{
+@media (min-width: 834px){
+    #sessaoProjetos{
+        width: 100%;
+        height: 1200px;
+    }
+}
+
+
+#sessaoProjetos > h1{
     display: flex;
     font-family: personalizada, Arial, Helvetica, sans-serif;
     text-decoration: underline;
@@ -312,23 +328,24 @@ background-color: #0a0a0a;
 
 .contprojeto{
     display: inline-grid;
-    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(260px, 1fr));
     grid-template-rows: repeat( auto-fit, minmax(220px, 1fr));
     column-gap: 20px;
-     row-gap: 10px;
+     row-gap: 70px;
       width: 100%;
 }
 
 .projeto{
     background-color: #121214;
-    box-shadow: 10px 9px 13px #340f0f;
-    border: 1px solid;
+    box-shadow: 5px 4px 4px #340f0f;
+    border: 1px solid #ee151530;
     width: 250px;
     height: 360px;
     margin: auto;
     border-radius: 5px;
     cursor: pointer;
-}  
+}
+ 
 
 .projeto:hover{
     transform: scale(1.1);
@@ -358,8 +375,8 @@ background-color: #0a0a0a;
 }
 
 .texto > h1 {
-    color: #720528;
-    text-shadow: 2px 2px 2px black;
+    color: #bc0303c7;
+    text-shadow: 2px 2px 2px #00000029;
     margin-top: 10px;
     text-align: center;
     font-size: 1.5rem;
@@ -368,26 +385,26 @@ background-color: #0a0a0a;
 .texto > h2 {
     color: #b18989;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 1rem;
 }
 
 .texto > h3{
     color: #b18989;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 1rem;
 }
 
 
 /* ---------------------------- quartao sessa ----------------------------------------------- */
-.sessao4{
+#sessaoCertificados{
     width: 100%;
     height: 580px;
-    background-color: #0a0a0a;
+    background-color: #000002;
 }
 
-.sessao4 > h1{
+#sessaoCertificados > h1{
 
     margin-bottom: 40px;
     display: flex;
@@ -424,20 +441,20 @@ body{
 
 
 /* ------------------------------------------- Habiliade --------------------- */
-.sessao_habilidade{
+#sessao_habilidade{
     width: 100%;
-   height: 1300px;
+   height: 1500px;
    background-color: #000002;
 }
 
 @media(max-width:960px){
-    .sessao_habilidade{
+    #sessao_habilidade{
         height: 1400px;
     }
 }
 
 @media (max-width: 416px){
-.sessao_habilidade {
+#sessao_habilidade {
     height: 1500px;
 }
 
@@ -458,29 +475,26 @@ body{
    margin: auto;
    margin-top: 100px;
    width: 850px;
-   height: 899px;
+   height: 1109px;
    background-color: #2A2D34;
 }
 
 @media(max-width:960px){
   .caixa_texto{
-   display: block;
-   margin: auto;
    margin-top: 50px;
    width: 400px;
-   height: 899px;
+  
    background-color: #2A2D34;
   }
 }
 
 @media(max-width:416px){
     .caixa_texto{ 
-     display: block;
-     margin: auto;
+  
      margin-top: 50px;
      width: 300px;
-     height: 999px;
-     background-color: #2A2D34;
+  
+  
  } 
  }
 
@@ -500,12 +514,9 @@ body{
    color: white;
    text-align: center;
    margin-top: 40px;
+   display:block;
 }
 
-#body_texto{ 
-    display:block;
-   
-} 
 
 .body_texto_div{
 margin: 20px;
@@ -576,3 +587,243 @@ margin-right: auto;
 .body_texto_div_h3{
  color: #FF014F;
 }
+
+
+
+/* formulario */
+
+#sessaoFormulario{
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 1800px;
+}
+
+.contFormulario{
+    background-color: #212428;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+    font-family: personalizado;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    height: 770px;
+    padding: 50px;
+}
+
+.form-group > label{
+    font-size: 12px;
+    color: #a0a8b3;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    margin-bottom: 14px;
+    text-align: left;
+    display: block;
+}
+
+form > button{
+    display: flex;
+    margin: auto;
+}
+
+.formInput{
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    width: 100%;
+    transition: var(--transition);
+    border: 2px solid #191b1e;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    color: var(--color-lightn);
+    box-shadow: var(--inner-shadow);
+    letter-spacing: 1px;
+}
+
+#inputEmail{
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    width: 100%;
+    transition: var(--transition);
+    border: 2px solid #191b1e;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    color: var(--color-lightn);
+    box-shadow: var(--inner-shadow);
+    letter-spacing: 1px;
+}
+
+#inputPassword{
+    background-color: #191b1e;
+    border-radius: 6px;
+    height: 55px;
+    width: 100%;
+    transition: var(--transition);
+    border: 2px solid #191b1e;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    color: var(--color-lightn);
+    box-shadow: var(--inner-shadow);
+    letter-spacing: 1px;
+}
+
+#submit{
+    height: 200px;
+}
+
+#button{
+    display: block;
+    width: 70%;
+    padding: 20px;
+    background-color:#191b1e ;
+    border: 1px solid #00000265;
+    margin: auto;
+    color: #ff014f;
+}
+#button:hover{
+     color: #04f804;
+     border: 1px solid #04f804;
+     transform: scale(1.1);
+}
+
+
+@media(max-width: 550px){
+  
+  .contFormulario{
+      width: 90%;
+      height: 800px;
+    }
+
+    #button{
+      width: 90%;
+    }
+
+    
+}
+
+/*  redes ===========*/
+
+
+
+.contInfo{
+    background-color: #212428;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+    font-family: personalizado;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.info{
+    display: flex;
+    color: #C4CFDE;
+   
+}
+
+.info > h1{
+    font-size: 1.3rem;
+    font-family: presonalizada;
+}
+
+.contInfoRedeLogo{
+    display: flex;
+}
+
+.contInfoRedeLogo > a{
+    display: block;
+    width: 70px;
+    margin-left: 10px;
+}
+
+.redeLogo > img {
+width: 70px;
+}
+    
+ .redeLogo{
+    
+    background-color: #00000054;
+    border-radius: 15px;
+   
+ }
+
+ .redeLogo:hover{
+    transform: scale(1.1);
+ }
+
+
+
+
+@media(max-width: 549px){
+
+
+.contInfo{
+
+    width: 90%;
+  
+    height: 650px;
+    
+}
+
+.contInfoHeader > div > h1{
+   display: table-caption;
+}
+
+.info{ margin-bottom: 30px;}
+
+
+.info > span > img{
+    width: 100%;
+}
+
+
+.info > span{
+    width: 10%;
+    margin-right: 20px;
+}
+
+
+}
+
+
+
+@media(min-width: 550px){
+
+    .contInfo{
+        width:60%;
+        height: 470px;
+    }
+    
+    
+    .contInfoHeader > div{
+        display:block;
+    }
+    
+    .info{
+        margin-top: 0px;
+    }
+    
+    .info > span{
+        width: 10%;
+        margin-right: 0px;
+    }
+    
+    
+    .info > span > img{
+        width: 55%;
+    }
+    
+    .contInfoRedeLogo{
+        margin-top: 40px;
+    }
+    
+    }

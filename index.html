@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.css"/>
+    <link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+
+    
     <link rel="stylesheet"  href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu-mobile.css">
@@ -26,30 +29,30 @@
             </div>
                       
               <nav class="header_container_menu">
-                    <div id="btn_mobile"></div>
+                    <div id="btnMobile"></div>
       
-                     <div id="interface_menu">
-                         <span id="botao_fechar">❌</span>
+                     <div class="interface_menu">
+                         <span id="btnMobileClose">❌</span>
                        
                             <div class="interface_menu_titulo">  
                                  <h1 style=" text-shadow: 2px 2px 4px black; color: #DC0140; font-family: personalizada;">Gabriel Barboza </h1>
                                  <p style=" font-family: Arial, Helvetica, sans-serif; color: #BCBCBC; margin-top: 20px; width: 277px; font-size: 13.5pt;"> Focado em aprender tecnologias voltado para o Front-End!</p>
                           </div>
       
-                                          <ul class="interface_menu_titulo_menu">
-                                              <li id="header_sobre"><a> Sobre </a></li>
-                                              <li id="header_projetos"><a> Projetos</a></li>
-                                              <li id="header_educa"><a > Educação</a></li>
-                                              <li  id="header_certificado"><a> Certificados </a></li>
+                                          <ul  class="interface_menu_titulo_menu" id="navMobile">
+                                              <li id="header_sobre_mobile" class="teste"> Sobre </li>
+                                              <li id="header_projetos_mobile"> Projetos</li>
+                                              <li id="header_educa_mobile">Educação</li>
+                                              <li  id="header_certificado_mobile">Certificados </li>
                                       </ul>
       
                                           <h1 style="position: relative; top: 125px;
                                           left: 80px; color: #BCBCBC;">Minhas Redes</h1>
                                           <div class="interface_menu_titulo_redes">
                                   
-                          <li> <a href="https://www.facebook.com/gabriel.barboza.587268/" target="_blank"><img src="imagem/facebook.png" style="cursor: pointer;"  id="facebook"></a> </li>
+                          <li> <a href="https://www.facebook.com/gabriel.barboza.587268/" target="_blank"><img src="imagem/facebook.png" style="cursor: pointer;"  class="facebook"></a> </li>
       
-                          <li  ><a href="https://www.instagram.com/gabrielll3600/" target="_blank"><img src="imagem/inst.png" id="inst" style="cursor: pointer;"></a></li>
+                          <li  ><a href="https://www.instagram.com/gabrielbarboza360/" target="_blank"><img src="imagem/inst.png" id="inst" style="cursor: pointer;"></a></li>
       
                           <li ><a href="https://github.com/gabrielbarboza360?tab=repositories" target="_blank"><img src="imagem/git.png" id="git" style="cursor: pointer;"></a></li>
       
@@ -59,17 +62,17 @@
                   </div>     
       
       <ul class="header_menu" id="nav" >
-          <li id="header_sobre2"><a> Sobre </a></li>
-          <li id="header_projetos2"><a> Projetos </a></li>
-          <li id="header_educa2"><a >Educação</a></li>
-         <li id="header_certificado2"><a> Certificados </a></li>
+          <li id="header_sobre"> Sobre </li>
+          <li id="header_projetos"> Projetos </li>
+          <li id="header_educa">Educação</li>
+         <li id="header_certificado">Certificados</li>
        </ul>
                   
       </nav>
       </div>
     </header>
 
-    <section class="sessao1" >
+    <section id="sessao1" >
 
         <h1 id="h1_quemsoueu">Gabriel Barboza</h1>
           <div class="botaoresponsividade" >
@@ -83,7 +86,7 @@
           </div>
       </section>
 
-      <section class="sessaosobre">
+      <section id="sessaoSobre">
     
         <h1 class="who_im" > Sobre <span style="text-decoration: underline wavy #EB0245;">mim &nbsp </span></h1>
     
@@ -93,7 +96,7 @@
     
     </section>
 
-    <section class="sessao3" >
+    <section id="sessaoProjetos" >
 
         <h1>Projetos</h1>
 
@@ -154,10 +157,38 @@
 </div>
 </a>
 </div>
+
+
+<div class="projeto"><a href="https://github.com/gabrielbarboza360/PortifolioReactJS" target="_blank">
+    <div class="imgtamanho"> 
+    <img src="imagem/portifolio.png" >
+    <div class="texto">
+    <h1>Meu Portifólio</h1>
+    <h2> - HTML/CSS/Bootstrap/React</h2>
+    <h3> - Meu Portifólio usando FrameWork e Bibliotecas. precisamente em React JS </h3>
+    </div>
+    </div>
+    </a>
+    </div>
+
+    <div class="projeto"><a href="https://github.com/gabrielbarboza360/PortifolioReactJS" target="_blank">
+        <div class="imgtamanho"> 
+        <img src="imagem/portifolio.png" >
+        <div class="texto">
+        <h1>Meu Portifólio</h1>
+        <h2> - HTML/CSS/Bootstrap/React</h2>
+        <h3> - Meu Portifólio usando FrameWork e Bibliotecas. precisamente em React JS </h3>
+        </div>
+        </div>
+        </a>
+        </div>
+
+
+
 </div>
 </section>
 
-<section class="sessao_habilidade">
+<section id="sessao_habilidade">
 
     <h1 class="sessao_habilidade_titulo"> Educa<span style="text-decoration: underline wavy #EB0245;;">ção &nbsp</span> </h1>
                  
@@ -167,8 +198,8 @@
     <div class="caixa_texto">
                 
         <div class="head_texto">
-            <div style="background-color: #2A2D34; font-weight: bold; padding: 15px;" class="sessao2_txt1" id="formaçao">Formação</div>
-            <div class="sessao2_txt2" id="skills" style="padding: 15px;">Skills</div>
+            <div style="background-color: #2A2D34; font-weight: bold; padding: 15px; cursor: pointer;" class="sessao2_txt1" id="formaçao">Formação</div>
+            <div class="sessao2_txt2" id="skills" style="padding: 15px; cursor: pointer;">Skills</div>
         </div>
     
         <div id="body_texto">
@@ -243,8 +274,80 @@
 
 </section>
 
+<section  id="sessaoFormulario">
+    <h1 class="sessao_habilidade_titulo"> Form<span style="text-decoration: underline wavy #EB0245;;">ulario &nbsp</span> </h1>
 
-<section class="sessao4" >
+ <div class="contFormulario">
+
+        <div class="form-row">
+
+                    <div class="form-group col-md-6 ">
+                            <label for="contact-name">SEU NOME</label>
+                            <input type="text" class="form-control formInput" id="inputEmail">
+                    </div>
+   
+                    <div class="form-group col-md-6">
+                            <label for="contact-phone">TELEFONE</label>
+                            <input type="text" class="form-control formInput" id="inputPassword">
+                    </div>
+        </div>
+
+       
+                    <div  class="form-group">
+                        <label for="contact-email">EMAIL </label>
+                        <input type="text" class="formInput" > 
+                    </div>
+                  
+                    <div  class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" class="formInput"> 
+                    </div>
+    
+                    <div  class="form-group">
+                        <label for="contact-message"  >Mensagem </label>
+                        <input type="text" class="formInput" id="submit" cols="30" rows="10"> 
+                    </div>
+              <button type="submit" class="btn btn-primary" id="button">Envia</button>
+
+        </form>
+    </div>
+ 
+     <div class="contInfo">
+       
+        <div class="contInfoHeader">
+            <div ><h1 style="font-size: 4rem; color: #DC0140; font-family: personalizada;"> Gabriel Barboza</h1></div>
+            <div class="infoAll">
+            <div class="info" style=" 
+            margin-top: 20px;"><p>desenvolvedor Front End Apaixonado por tecnologias</p></div>
+            
+            <div class="info"><span><img src="/imagem/email.png" alt="logo de email"></span><h1>gabrielbarboza3600@gmail.com</h1></div>
+            <div class="info"><span><img src="/imagem/telefone.png" alt="logo de telefone"></span><h1>(21) 987099560</h1></div>
+            <div class="info"><span><img src="/imagem/localizaçao.png" alt="logo de localizaçao"></span> Rio de Janeiro, Brasil</div>
+        </div>   
+        </div>
+
+          <div class="contInfoRede">
+            <div class="contInfoRedeLogo">   
+                     
+                 <a href="https://www.facebook.com/gabriel.barboza.587268/" target="_blank"><div class="redeLogo"><img src="imagem/facebook.png" style="cursor: pointer;"> </div></a> 
+
+                <a href="https://www.instagram.com/gabrielbarboza360/" target="_blank"><div  class="redeLogo"><img src="imagem/inst.png" id="inst" style="cursor: pointer;"></div></a>
+
+                <a href="https://github.com/gabrielbarboza360?tab=repositories" target="_blank"><div  class="redeLogo"><img src="imagem/git.png" id="git" style="cursor: pointer;"></div></a>
+
+               <a href="https://www.linkedin.com/in/gabriel-barboza-a0538924a"><div  class="redeLogo"><img src="imagem/in.png"  id="in" style="cursor: pointer;"></div></a>
+           
+         </div>
+          </div>
+     </div>
+
+
+</div>
+
+</section>
+
+
+<section id="sessaoCertificados" >
 
                                          <h1>Certificados</h1>
 
@@ -335,13 +438,13 @@
 </footer>
  
 
-
-<script src="redesocial.js"></script>
-<script src="slider.js"></script>
-<script src="menu-mobile.js"></script>
+<script src="./Javascript/menu-mobile.js"></script>
+<script src="./Javascript/redesocial.js"></script>
+<script src="./Javascript/slider.js"></script>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
-
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
+<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
 </body>
 </html>
 

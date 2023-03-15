@@ -11,7 +11,7 @@
         margin-right: 20px ;
     }
        
-    #btn_mobile{
+    #btnMobile{
           border-top: 2px solid;
           width: 30px;
           margin-top: 30px;
@@ -19,7 +19,7 @@
           cursor: pointer;
         }  
     
-    #btn_mobile::after , #btn_mobile::before{
+        #btnMobile::after , #btnMobile::before{
           content: '';
           display: block;
           width: 30px;
@@ -30,7 +30,7 @@
           position: relative;
        }
     
-    #interface_menu{
+    .interface_menu{
         background-color: #191B1E;
         margin-top: -50px;
         margin-left: -200px;
@@ -40,12 +40,29 @@
         overflow: hidden;
         width: 350px;
         height: 1200px;
-        transition: 2s;
-            
+        transition: 2s;   
    
     }
+
+    .interfaceMenuOpen{
+        left: 130px;
+       
+    }
+    .interfaceMenuclose{
+        left: -330px;
+     
+    }
     
-    #botao_fechar{
+    .btnMobileOpen{
+        display: none;
+    }
+    
+    .btnMobileClose{
+        display: block;
+    }
+
+    
+    #btnMobileClose{
         position: relative;
         top: 70px;
         font-size: 18pt;
@@ -112,7 +129,12 @@
 }
 
 @media(min-width: 961px){
-    #interface_menu{
+    .interface_menu{
         display: none;
     }
+
+
+
+    
 }
+
