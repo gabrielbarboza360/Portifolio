@@ -791,6 +791,9 @@ width: 70px;
     margin-right: 20px;
 }
 
+.contInfoRede{
+    margin-left: -20px;
+}
 
 }
 
@@ -809,7 +812,7 @@ width: 70px;
     }
     
     .info{
-        margin-top: 0px;
+        margin-bottom: 0px;
     }
     
     .info > span{
@@ -826,4 +829,10 @@ width: 70px;
         margin-top: 40px;
     }
     
+    }
+
+    @media(min-width:1141px){
+        .info{
+            margin-bottom: 20px;
+        } 
     }
