@@ -1,9 +1,9 @@
-
+/*
 window.alert("ESTA EM MANUTENÇÂO");
 
 window.alert("Site esta em manutençao, entao nao repare a bagunça");
 
-
+*/
 
 // -------------------- movimento dos menus TOP -------------------
 
@@ -112,7 +112,7 @@ btnFormaçao.addEventListener("click", (e) =>{
     conteudoSkills.style.display = "none";
     btnSkills.style['background-color'] = naoseletorcor;
     btnFormaçao.style['background-color'] = seletorcor;
-    caixaTexto.style.height = "1450px";
+    caixaTexto.style.height = "70%";
 
 
 });
