@@ -120,7 +120,7 @@
 <div class="projeto"><a href="https://gabrielbarboza360.github.io/e_commerce_airsoft/index.html" target="_blank">
 <div class="imgtamanho"> 
 
-<img src="imagem/ecommerceAirsoft.png" >
+<img >
 <div class="texto">
 <h1>E-commerce Airsoft</h1>
 <h2> HTML/CSS/Bootstrap/JavaScript</h2>
@@ -279,33 +279,37 @@
     
  <div class="contFormulario">
     <p style="    text-align: center; font-size: 1.4rem; font-family: personalizado; color: #a0a8b3; padding-bottom: 30px;">Entre em contato Comigo</p>
-        <div class="form-row">
 
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="cb3bb939-5c1a-4f85-b409-04820486ae58">
+        <input type="hidden" name="redirectTo" value="https://gabrielbarboza360.github.io/Portifolio/index.html">
+        <div class="form-row">
+               
                     <div class="form-group col-md-6 ">
-                            <label for="contact-name">SEU NOME</label>
-                            <input type="text" class="form-control formInput" id="inputEmail">
+                            <label for="contact-name" >SEU NOME</label>
+                            <input type="text" class="form-control formInput" id="inputEmail" name="name">
                     </div>
    
                     <div class="form-group col-md-6">
-                            <label for="contact-phone">TELEFONE</label>
-                            <input type="text" class="form-control formInput" id="inputPassword">
+                            <label for="contact-phone" >TELEFONE</label>
+                            <input type="text" class="form-control formInput" id="inputPassword" name="phone">
                     </div>
         </div>
 
        
                     <div  class="form-group">
-                        <label for="contact-email">EMAIL </label>
-                        <input type="text" class="formInput" > 
+                        <label for="contact-email" >EMAIL </label>
+                        <input type="email" class="formInput" name="email"> 
                     </div>
                   
                     <div  class="form-group">
-                        <label for="subject">Assunto</label>
-                        <input type="text" class="formInput"> 
+                        <label for="subject" >Assunto</label>
+                        <input type="text" class="formInput" name="subject"> 
                     </div>
     
                     <div  class="form-group">
                         <label for="contact-message"  >Mensagem </label>
-                        <input type="text" class="formInput" id="submit" cols="30" rows="10"> 
+                        <input type="message" class="formInput" id="submit" cols="30" rows="10" name="message"> 
                     </div>
               <button type="submit" class="btn btn-primary" id="button">Envia</button>
 
