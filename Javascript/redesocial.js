@@ -1,9 +1,9 @@
-/*
+
 window.alert("ESTA EM MANUTENÇÂO");
 
 window.alert("Site esta em manutençao, entao nao repare a bagunça");
 
-*/
+
 
 // -------------------- movimento dos menus TOP -------------------
 
