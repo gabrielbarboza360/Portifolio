@@ -1,0 +1,115 @@
+#sessao_habilidade{
+    width: 100%;
+   height: 1800px;
+   background-color: #000002;
+}
+
+.sessao_habilidade_titulo{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'personalizada';
+    padding-top: 40px;
+ }
+
+ .caixa_texto{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    width: 850px;
+    height: 1259px;
+    background-color: #2A2D34;
+ }
+ 
+ .head_texto{
+    display: inline-flex;
+    background-color: #646872;
+    width: 100%;
+    height: 60px;
+    font-size: 16pt;
+    color:white;
+    font-weight: bold
+ }
+ 
+ .body_texto_div{
+    margin: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+ #body_texto{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    display:block;
+ }
+ 
+ #body_texto2{
+    grid-template-columns: 1;
+    display: block;
+    margin: 40px;
+    margin: 10px auto 0px auto;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    color: #FF014F;
+ }
+
+ .body_texto_div{
+    box-shadow: 2px 2px 4px black;
+    border-radius: 4px;
+    display: block;
+    background-color: #1E2124;
+ }
+.body_texto_div2{
+   box-shadow: 2px 2px 4px black;
+   border-radius: 4px;
+   display: block;
+   background-color: #1E2124;
+   margin: 6px;
+}
+
+.body_texto_div_h1{
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 4px black;
+ }
+ 
+ .body_texto_div_h2{
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px black;
+    padding-bottom: 10px;
+    color: #7C838E;
+ }
+ 
+ .body_texto_div_h3{
+  color: #FF014F;
+ }
+ 
+
+ @media(max-width:960px){
+    #sessao_habilidade{
+        height: 1700px;}
+}
+
+@media(max-width:960px){
+  .caixa_texto{
+   margin-top: 50px;
+   width: 400px;
+   background-color: #2A2D34;}
+}
+
+@media(max-width:416px){
+    .caixa_texto{ 
+     margin-top: 50px;
+     width: 300px;} 
+ }
+
+@media(max-width:616px){
+    #body_texto{ 
+        display:block;} 
+ }

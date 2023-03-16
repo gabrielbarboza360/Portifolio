@@ -1,0 +1,99 @@
+#sessaoProjetos{
+    width: 100%;
+    height: 700px;
+    background-color:#0a0a0a;
+}
+
+#sessaoProjetos > h1{
+    display: flex;
+    font-family: personalizada, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    padding: 30px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    margin-bottom: 40px;
+}
+
+.contprojeto{
+    display: inline-grid;
+    grid-template-columns: repeat( auto-fit, minmax(260px, 1fr));
+    grid-template-rows: repeat( auto-fit, minmax(220px, 1fr));
+    column-gap: 20px;
+     row-gap: 70px;
+      width: 100%;
+      margin-top: 100px;
+}
+
+.projeto{
+    background-color: #121214;
+    box-shadow: 5px 4px 4px #340f0f;
+    border: 1px solid #ee151530;
+    width: 250px;
+    height: 360px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.projeto:hover{
+    transform: scale(1.1);
+}
+
+.projeto > a > .imgtamanho > img{
+    width: 100%;
+    height: 210px;
+    object-position: left;
+    object-fit: cover;
+}
+
+.projeto > a{
+    text-decoration: none;
+
+}
+
+.texto{
+    display: block;
+    width: 100%;
+}
+
+.texto > h1 {
+    color: #bc0303c7;
+    text-shadow: 2px 2px 2px #00000029;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.texto > h2 {
+    color: #b18989;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.texto > h3{
+    color: #b18989;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 556px){
+    #sessaoProjetos{
+        width: 100%;
+        height: 3000px;}
+}
+
+@media (min-width: 557px) and (max-width:837px){
+    #sessaoProjetos{
+        width: 100%;
+        height: 1600px;}
+}
+
+@media (min-width: 834px){
+    #sessaoProjetos{
+        width: 100%;
+        height: 1200px;}
+}
